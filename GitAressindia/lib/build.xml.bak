@@ -11,7 +11,7 @@
     <condition property="sf.password" value=""> <not> <isset property="sf.password"/> </not> </condition>
     <condition property="sf.sessionId" value=""> <not> <isset property="sf.sessionId"/> </not> </condition>
 
-    <target name=”deployall”>
-		<sf:deploy username=”${sf.username}” password=”${sf.password}” serverurl=”${sf.serverurl}” testlevel=”NoTestRun” logtype=”Detail” deployRoot=”force-app”/>
+    <target name="deployall>
+		<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app"/>
 	</target>
 </project>
