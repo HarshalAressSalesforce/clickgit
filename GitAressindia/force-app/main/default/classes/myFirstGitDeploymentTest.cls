@@ -4,5 +4,6 @@ private class myFirstGitDeploymentTest {
         myFirstGitDeployment mg = new myFirstGitDeployment();
         myFirstGitDeployment.myFirstGitDeploymentCls();
         myFirstGitDeployment.myNewFunction();
+        myFirstGitDeployment.myNewFunction();
     }
 }
