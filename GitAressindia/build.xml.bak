@@ -1,14 +1,15 @@
-<project name="Sample usage of Salesforce Ant tasks" default="deployall" basedir="." xmlns:sf="antlib:com.salesforce">
-  
-    <property file="build.properties"/>
-    <property environment="env"/>
+<project name="Sample usage of Salesforce Ant tasks" default="test" basedir="." xmlns:sf="antlib:com.salesforce">
 
-     
-    <condition property="sf.username" value=""> <not> <isset property="sf.username"/> </not> </condition>
-    <condition property="sf.password" value=""> <not> <isset property="sf.password"/> </not> </condition>
-    <condition property="sf.sessionId" value=""> <not> <isset property="sf.sessionId"/> </not> </condition>
+<property file="build.properties"/>
 
-    <target name="deployall">
-		<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app"/>
-	</target>
+<property environment="env"/>
+
+<! — Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization’s namespace only →
+
+<target name="deployall">
+
+<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" testlevel="NoTestRun" logtype="Detail" deployRoot="force-app"/>
+
+</target>
+
 </project>
