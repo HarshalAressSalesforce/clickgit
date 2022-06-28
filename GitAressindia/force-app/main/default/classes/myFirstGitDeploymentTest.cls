@@ -6,5 +6,7 @@ private class myFirstGitDeploymentTest {
         myFirstGitDeployment.myNewFunction();
         myFirstGitDeployment.myNewFunction();
         myFirstGitDeployment.myNewFunction();
+
+        myFirstGitDeployment.myNewFunction();
     }
 }
