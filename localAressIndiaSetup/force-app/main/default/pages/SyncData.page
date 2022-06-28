@@ -1,5 +1,0 @@
-<apex:page controller="OrderSync">
-<apex:form >
-<apex:commandButton value="getShopifyData" action="{!retrieveGoogleAccessToken}"/>
-</apex:form>
-</apex:page>

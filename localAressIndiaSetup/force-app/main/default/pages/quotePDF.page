@@ -1,5 +1,0 @@
-<apex:page standardController="Quote" showHeader="false" renderAs="pdf">
-    <body>
-        Testing template
-    </body>
-</apex:page>
